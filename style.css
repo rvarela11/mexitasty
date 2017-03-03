@@ -1,0 +1,355 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0;
+  color: #484848 ;
+}
+a {
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* NAV ---------------------------------------------------------------------- */
+
+.nav {
+  height: 100vh;
+  background-color: #dbad6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav ul li {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+.nav ul li:hover {
+  border-bottom: 2px solid #8f4620;
+}
+.nav ul li a {
+  color: #fff;
+}
+.nav ul li a i {
+  margin-right: 20px;
+}
+.nav-img {
+  width: 40px;
+  height: 50px;
+  z-index: 1000;
+  position: fixed;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 1%;
+}
+.nav-img:hover {
+  border-bottom: 2px solid #dbad6c;
+}
+
+/* Home --------------------------------------------------------------------- */
+
+.home,
+.work,
+.plans {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+}
+.home__message h2,
+.work__title h2,
+.plans__title h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 0;
+  margin: 2% 0;
+}
+.home__message--highlight {
+  font-weight: 700;
+  color: #ce1126;
+}
+.home__pictures--title h4 {
+  margin: 0 0 2% 0;
+}
+.home__pictures {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.home__pictures--bottom {
+  margin-top: 5px;
+}
+.home__pictures div {
+  height: 100%;
+  width: 100%;
+}
+.home__pictures div:nth-child(1n+2) {
+  margin-left: 5px;
+}
+.home__pictures div img {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+.home__pictures--mobile {
+  display: none;
+  width: 100%;
+  height: 40vh;
+}
+.home__pictures--mobile img {
+  height: 100%;
+  width: 100%;
+}
+
+/* HEADER ------------------------------------------------------------------- */
+
+header {
+  padding: 1%;
+}
+.header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.header__title--h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+/* Work --------------------------------------------------------------------- */
+
+.work__title h2 {
+  font-size: 2.5rem;
+}
+.work__description {
+  background-color: #30c2dc;
+  padding: 2%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.work__description--highlight {
+  border-bottom: 2px solid #ce1126
+}
+.work__description h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.work__picture {
+  height: 20vh;
+  width: 30%;
+  margin: 0 0 2% 0;
+  margin: auto;
+}
+.work__picture img {
+  height: 100%;
+  width: 100%;
+}
+.work__info {
+  display: flex;
+  flex-direction: row;
+}
+.work__info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  padding: 1%;
+}
+.work__info div h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+/* PLANS  ------------------------------------------------------------------ */
+
+.plans__description {
+  margin: 0 0 2% 0;
+}
+.plans__info {
+  margin: 2% 0;
+}
+.plans__info div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  background-color: #30c2dc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.plans__info div:first-child {
+  width: 25%;
+}
+.plans__info div:nth-child(2) {
+  width: 50%;
+}
+.plans__info div:last-child {
+  width: 75%;
+}
+.plans__info div img {
+  width: 10%;
+  height: 10%;
+}
+.plans__info div:first-child img {
+  width: 20%;
+}
+.plans__info div:nth-child(2) img {
+  width: 10%;
+}
+.plans__info div:last-child img {
+  width: 7%;
+}
+.plans__info div h4 {
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin-left: 15px;
+  color: #fff;
+}
+.plans__description ul {
+  list-style-type: circle;
+}
+
+
+/* FOOTER ------------------------------------------------------------------ */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+/* COLORFUL-LINEBREAK ------------------------------------------------------ */
+
+.colorful-linebreak {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0;
+}
+.colorful-linebreak div {
+  height: 5px;
+  flex: 1;
+}
+.colorful-linebreak div:first-child {
+  background-color: #006847;
+}
+.colorful-linebreak div:nth-child(2) {
+  background-color: #8f4620;
+}
+.colorful-linebreak div:nth-child(3) {
+  background-color: #dbad6c;
+}
+.colorful-linebreak div:nth-child(4) {
+  background-color: #30c2dc;
+}
+.colorful-linebreak div:nth-child(5) {
+  background-color: #ce1126;
+}
+
+
+/* RESPONSIVE --------------------------------------------------------------- */
+
+@media screen and (max-width: 1016px) {
+  .home,
+  .work,
+  .plans {
+    width: 88%;
+  }
+  .home__pictures {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 770px) {
+  .home,
+  .work,
+  .plans {
+    width: 85%;
+  }
+  .home__pictures {
+    height: 25vh;
+  }
+  .plans__info div {
+    background-color: #fff;
+    width: 100% !important;
+  }
+  .plans__info div img {
+    width: 20% !important;
+    height: 20% !important;
+  }
+  .plans__info div h4 {
+    color: #484848;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 588px) {
+  .home,
+  .work,
+  .plans {
+    width: 81%;
+  }
+  .home__pictures {
+    height: 20vh;
+  }
+  .work__picture {
+    width: 100%;
+  }
+  .work__info {
+    flex-direction: column;
+  }
+  .work__description h4,
+  .plans__description h4 {
+    font-size: 1.25rem;
+  }
+  .work__info div p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 433px) {
+  .nav ul {
+    padding-left: 2%;
+  }
+  .home,
+  .work,
+  .plans {
+    height: auto;
+  }
+  .colorful-linebreak {
+    margin: 4% 0;
+  }
+  .nav-img {
+    width: 30px;
+    height: 40px;
+  }
+  .home,
+  .work,
+  .plans {
+    width: 75%;
+  }
+  .home__message h2 {
+    font-size: 2.5rem;
+  }
+  .home__pictures {
+    display: none;
+  }
+  .home__pictures--mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 324px) {
+  .home,
+  .work,
+  .plans {
+    width: 70%;
+  }
+}
