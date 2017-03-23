@@ -1,0 +1,10 @@
+<svg width="200px" height="200px" viewBox="177 129 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="12" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(177.000000, 129.000000)">
+        <path d="M100,200 C44.771525,200 0,155.228475 0,100 C0,44.771525 44.771525,0 100,0 C155.228475,0 200,44.771525 200,100 C200,155.228475 155.228475,200 100,200 Z M100,185 C146.944204,185 185,146.944204 185,100 C185,53.0557963 146.944204,15 100,15 C53.0557963,15 15,53.0557963 15,100 C15,146.944204 53.0557963,185 100,185 Z" id="Combined-Shape" fill="#000000"></path>
+        <text font-family="HelveticaNeue, Helvetica Neue" font-size="110" font-weight="normal" fill="#000000">
+            <tspan x="36" y="135">12</tspan>
+        </text>
+    </g>
+</svg>

@@ -207,14 +207,66 @@ header {
   font-weight: 100;
 }
 
+/* --------------- Plans --------------- */
+
+.plans__description {
+  margin: 0 0 2% 0;
+}
+.plans__info {
+  margin: 2% 0;
+}
+.plans__info div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  background-color: #30c2dc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.plans__info div:first-child {
+  width: 25%;
+}
+.plans__info div:nth-child(2) {
+  width: 50%;
+}
+.plans__info div:last-child {
+  width: 75%;
+}
+.plans__info div img {
+  width: 10%;
+  height: 10%;
+}
+.plans__info div:first-child img {
+  width: 20%;
+}
+.plans__info div:nth-child(2) img {
+  width: 10%;
+}
+.plans__info div:last-child img {
+  width: 7%;
+}
+.plans__info div h4 {
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin-left: 15px;
+  color: #fff;
+}
+.plans__description ul {
+  list-style-type: circle;
+}
+.plans__description ul li {
+  margin: 20px;
+}
+
 /* --------------- Footer --------------- */
 
 footer {
-  background: url("images/mexi-logo-neon.jpg") no-repeat;
-  background-color: #0DFFFF;
+  background: url("images/mexi-logo-cut.jpg") no-repeat;
   background-size: contain;
   background-position: center center;
   height: 10vh;
+  border-top: 1px solid #ccc;
 }
 
 /* --------------- Responsive --------------- */
@@ -248,5 +300,17 @@ footer {
   }
   .work__info div p {
     text-align: center;
+  }
+  .plans__info div {
+    background-color: #fff;
+    width: 100% !important;
+  }
+  .plans__info div img {
+    width: 20% !important;
+    height: 20% !important;
+  }
+  .plans__info div h4 {
+    color: #484848;
+    font-size: 1rem;
   }
 }
