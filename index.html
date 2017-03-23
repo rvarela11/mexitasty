@@ -8,10 +8,25 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/mexi-logo-cut.jpg">
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   </head>
   <body>
 
-    <nav>
+    <!-- This section will not show until the NAV BUTTON is clicked -->
+
+    <nav style="display:none" class="nav">
+      <ul>
+        <li class="nav__home"><a href="#home"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+        <li class="nav__work"><a href="#work"><i class="fa fa-cog" aria-hidden="true"></i>HOW DOES IT WORK</a></li>
+        <li class="nav__plans"><a href="#plans"><i class="fa fa-th-large" aria-hidden="true"></i>PLANS</a></li>
+      </ul>
+    </nav>
+
+    <!-- class section-body is to display none when the nav-button is clicked -->
+
+    <div class="section-body">
+
+    <header>
       <div class="nav__left">
         <a href="#">
           <img alt="Brand" src="images/mexi-logo-cut.jpg"/>
@@ -19,13 +34,15 @@
         </a>
       </div>
       <div class="nav__right">
-        <button>
+        <button class="nav-button">
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
-    </nav>
+    </header>
+
+
 
     <section class="home">
       <div class="home__background-picture">
@@ -42,6 +59,8 @@
     <h1>Sup</h1>
     <div class="background-picture thirdbreak"></div>
     <h1>Sup</h1>
+
+  </div>
 
     <script type="text/javascript" src="main.js"></script>
   </body>
