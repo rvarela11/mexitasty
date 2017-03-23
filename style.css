@@ -155,10 +155,6 @@ header {
   background: url("images/visit-mexico-logo.png") no-repeat;
   background-color: #dbad6c;
 }
-.thirdbreak {
-  background: url("images/mexi-logo-neon.jpg") no-repeat;
-  background-color: #0DFFFF;
-}
 .background-picture {
   background-size: contain;
   background-position: center center;
@@ -209,6 +205,16 @@ header {
 .work__info div h4 {
   font-size: 1.5rem;
   font-weight: 100;
+}
+
+/* --------------- Footer --------------- */
+
+footer {
+  background: url("images/mexi-logo-neon.jpg") no-repeat;
+  background-color: #0DFFFF;
+  background-size: contain;
+  background-position: center center;
+  height: 10vh;
 }
 
 /* --------------- Responsive --------------- */
