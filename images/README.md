@@ -1,3 +1,0 @@
-# Mexitasty
-
-Demo webpage
