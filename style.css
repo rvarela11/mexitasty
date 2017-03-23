@@ -107,7 +107,8 @@ header {
 /* --------------- Home --------------- */
 .home {
   height: 90vh;
-  margin: 0 5%;
+  width: 90%;
+  margin: auto;
 }
 .home__background-picture {
   background: url("images/home__background-picture6.jpg") no-repeat;
@@ -151,12 +152,12 @@ header {
   background-color: #FEE037;
 }
 .secondbreak {
-  background: url("images/mexi-logo-neon.jpg") no-repeat;
-  background-color: #0DFFFF;
-}
-.thirdbreak {
   background: url("images/visit-mexico-logo.png") no-repeat;
   background-color: #dbad6c;
+}
+.thirdbreak {
+  background: url("images/mexi-logo-neon.jpg") no-repeat;
+  background-color: #0DFFFF;
 }
 .background-picture {
   background-size: contain;
@@ -164,7 +165,51 @@ header {
   height: 30vh;
 }
 
+/* --------------- How does it work --------------- */
 
+.work,
+.plans {
+  width: 90%;
+  margin: auto;
+}
+.work__title h2,
+.plans__title h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin: 0;
+  margin: 2% 0;
+}
+.work__description {
+  background-color: #30c2dc;
+  padding: 2%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.work__description--highlight {
+  border-bottom: 2px solid #ce1126
+}
+.work__description h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.work__info {
+  display: flex;
+  flex-direction: row;
+}
+.work__info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  padding: 1%;
+}
+.work__info div h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
 
 /* --------------- Responsive --------------- */
 
@@ -179,9 +224,23 @@ header {
     width: 70%;
   }
   .home__message h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .home__button-subscribe {
     padding: 10px;
+  }
+  .work__title h2 {
+    margin: 5% 0;
+    font-size: 2rem;
+  }
+  .work__info {
+    flex-direction: column;
+  }
+  .work__description h4,
+  .plans__description h4 {
+    font-size: 1.25rem;
+  }
+  .work__info div p {
+    text-align: center;
   }
 }
