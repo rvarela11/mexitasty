@@ -29,8 +29,40 @@ nav {
 .nav__right {
   display: flex;
   flex: 1;
+  margin: 0 5%;
 }
-.nav__left a,
+.nav__left a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__left a img {
+  height: 45px;
+  width: 38px;
+}
+.nav__left a h1 {
+  margin: 0px 0px 0px 10px;
+  font-size: 1.5rem;
+}
+.nav__right {
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav__right button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.nav__right button span {
+  height: 2px;
+  width: 20px;
+  background-color: #484848;
+  margin: 5px 0;
+  display: block;
+}
+/*.nav__left a,
 .nav__right ul {
   display: flex;
   align-items: center;
@@ -51,7 +83,7 @@ nav {
 }
 .nav__right ul li {
   margin: 0 20px;
-}
+}*/
 
 /* --------------- Home --------------- */
 .home {
@@ -94,21 +126,19 @@ nav {
 }
 
 /* --------------- Background-pictures --------------- */
+
 .firstbreak {
   background: url("images/paleta-payaso.png") no-repeat;
   background-color: #FEE037;
 }
-
 .secondbreak {
   background: url("images/mexi-logo-neon.jpg") no-repeat;
   background-color: #0DFFFF;
 }
-
 .thirdbreak {
   background: url("images/visit-mexico-logo.png") no-repeat;
   background-color: #dbad6c;
 }
-
 .background-picture {
   background-size: contain;
   background-position: center center;
